@@ -71,65 +71,14 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <article id="post-docker查看日志" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2025/04/16/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2025-04-16T15:24:03.601Z" itemprop="datePublished">2025-04-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2025/04/16/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://www.980101.top/2025/04/16/hello-world/" data-id="cm9k4m80s0001esnrfjpb0sjp" data-title="Hello World" class="article-share-link"><span class="fa fa-share">分享</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-My-New-Article" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/04/15/My-New-Article/" class="article-date">
-  <time class="dt-published" datetime="2025-04-15T15:26:18.000Z" itemprop="datePublished">2025-04-15</time>
+    <a href="/2024/05/10/docker%E6%9F%A5%E7%9C%8B%E6%97%A5%E5%BF%97/" class="article-date">
+  <time class="dt-published" datetime="2024-05-10T08:41:28.000Z" itemprop="datePublished">2024-05-10</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/Category1/">Category1</a>
+    <a class="article-category-link" href="/categories/docker/">docker</a>
   </div>
 
   </div>
@@ -140,7 +89,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2025/04/15/My-New-Article/">My New Article</a>
+      <a class="p-name article-title" href="/2024/05/10/docker%E6%9F%A5%E7%9C%8B%E6%97%A5%E5%BF%97/">docker查看日志</a>
     </h1>
   
 
@@ -148,16 +97,613 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>文章正文内容… 正文</p>
+        <h3 id="docker查看日志"><a href="#docker查看日志" class="headerlink" title="docker查看日志"></a>docker查看日志</h3><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">docker logs -f -t --since=&quot;<span class="number">2024</span>-<span class="number">05</span>-<span class="number">06</span>&quot; --tail=<span class="number">100</span> CONTAINER_ID</span><br><span class="line">// since 查看指定时间之后的日志</span><br><span class="line">// tail 查看多少条</span><br><span class="line">// CONTAINER_ID 容器ID</span><br><span class="line"></span><br><span class="line">docker logs --since <span class="number">30</span>m CONTAINER_ID</span><br><span class="line">// 查看近<span class="number">30</span>分钟的日志</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="center">名称，简写</th>
+<th align="center">默认</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>--details</code></td>
+<td align="center"></td>
+<td align="center">显示更多的信息</td>
+</tr>
+<tr>
+<td align="center"><code>--follow</code> , <code>-f</code></td>
+<td align="center"></td>
+<td align="center">跟踪日志输出</td>
+</tr>
+<tr>
+<td align="center"><code>--since</code></td>
+<td align="center"></td>
+<td align="center">显示自某个timestamp之后的日志，或相对时间，如42m（即42分钟）</td>
+</tr>
+<tr>
+<td align="center"><code>--tail</code> , <code>-n</code></td>
+<td align="center"><code>all</code></td>
+<td align="center">从日志末尾显示的行数，默认为all</td>
+</tr>
+<tr>
+<td align="center"><code>--timestamps</code> , <code>-t</code></td>
+<td align="center"></td>
+<td align="center">显示时间戳</td>
+</tr>
+<tr>
+<td align="center"><code>--until</code></td>
+<td align="center"></td>
+<td align="center">显示自某个timestamp之前的日志，或相对时间，如42m（即42分钟）</td>
+</tr>
+</tbody></table>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://www.980101.top/2025/04/15/My-New-Article/" data-id="cm9k4m80q0000esnrfdiu7e02" data-title="My New Article" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://www.980101.top/2024/05/10/docker%E6%9F%A5%E7%9C%8B%E6%97%A5%E5%BF%97/" data-id="cm9oc75x2000in7nr8ryc4j61" data-title="docker查看日志" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tag1/" rel="tag">tag1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tag2/" rel="tag">tag2</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/docker/" rel="tag">docker</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Linux常用命令" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/03/24/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="article-date">
+  <time class="dt-published" datetime="2023-03-24T08:25:23.000Z" itemprop="datePublished">2023-03-24</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/linux/">linux</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/03/24/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">Linux常用命令</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h4 id="nginx相关命令"><a href="#nginx相关命令" class="headerlink" title="nginx相关命令"></a>nginx相关命令</h4><h5 id="重启nginx"><a href="#重启nginx" class="headerlink" title="重启nginx"></a>重启nginx</h5><blockquote>
+<p>service nginx restart</p>
+</blockquote>
+<h5 id="启动nginx-service-相关命令"><a href="#启动nginx-service-相关命令" class="headerlink" title="启动nginx(service 相关命令)"></a>启动nginx(service 相关命令)</h5><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">service nginx <span class="built_in">start</span> </span><br><span class="line"># 启动nginxservice nginx stop </span><br><span class="line"># 停止nginxservice nginx status </span><br><span class="line">#查看nginx状态</span><br></pre></td></tr></table></figure>
+<h5 id="重载nginx配置文件"><a href="#重载nginx配置文件" class="headerlink" title="重载nginx配置文件"></a>重载nginx配置文件</h5><blockquote>
+<p>nginx -s reload</p>
+</blockquote>
+<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><h5 id="改变文件所属用户"><a href="#改变文件所属用户" class="headerlink" title="改变文件所属用户"></a>改变文件所属用户</h5><blockquote>
+<p>chown -R www-data:www-data test&#x2F; </p>
+</blockquote>
+<h5 id="删除用户组-用户-查看用户所属组"><a href="#删除用户组-用户-查看用户所属组" class="headerlink" title="删除用户组&#x2F;用户,查看用户所属组"></a>删除用户组&#x2F;用户,查看用户所属组</h5><blockquote>
+<p>sudo groupdel name 删除用户组</p>
+</blockquote>
+<blockquote>
+<p>sudo userdel name 删除用户</p>
+</blockquote>
+<blockquote>
+<p>groups name 查看用户所属用户组</p>
+</blockquote>
+<h5 id="添加软连接"><a href="#添加软连接" class="headerlink" title="添加软连接"></a>添加软连接</h5><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ln -s /etc/nginx/sites-available/hengyi /etc/nginx/sites-enabled/</span><br><span class="line">#ln -s 源文件/目录 目标链接文件/目录</span><br></pre></td></tr></table></figure>
+<h5 id="zip相关命令首先安装zip"><a href="#zip相关命令首先安装zip" class="headerlink" title="zip相关命令首先安装zip"></a>zip相关命令<strong>首先安装zip</strong></h5><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install zip</span><br></pre></td></tr></table></figure>
+<p><strong>压缩文件</strong></p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zip -r test.zip ./*</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>把myfile.zip文件解压到 &#x2F;home&#x2F;sunny&#x2F;<br>-o:不提示的情况下覆盖文件;<br>-d:-d &#x2F;home&#x2F;sunny指明将文件解压缩到&#x2F;home&#x2F;sunny目录下。</p>
+</blockquote>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">unzip -o -d /home/sunny test.zip</span><br></pre></td></tr></table></figure>
+<p><strong>删除压缩包中的文件</strong></p>
+<blockquote>
+<p>删除压缩文件中test.txt文件</p>
+</blockquote>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zip -d myfile.zip test.txt</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>test.zip中添加rpm_info.txt文件。</p>
+</blockquote>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zip -m test.zip ./rpm_info.txt</span><br></pre></td></tr></table></figure>
+<p><strong>同步系统时间(ntpdate)</strong></p>
+<blockquote>
+<p>查看系统时间</p>
+</blockquote>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">timedatectl</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>下载 ntpdate</p>
+</blockquote>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt install ntpdate</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>ntp常用服务器</p>
+</blockquote>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cn.pool.ntp.org 中国开源免费NTP服务器ntp1.aliyun.com 阿里云NTP服务器ntp2.aliyun.com 阿里云NTP服务器time1.aliyun.com 阿里云NTP服务器time2.aliyun.com 阿里云NTP服务器</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>同步时间</p>
+</blockquote>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ntpdate ntp1.aliyun.com(时间服务器地址)</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://www.980101.top/2023/03/24/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" data-id="cm9oc75x1000en7nr6jpu9lv9" data-title="Linux常用命令" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/" rel="tag">linux</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-安装compoer" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/03/08/%E5%AE%89%E8%A3%85compoer/" class="article-date">
+  <time class="dt-published" datetime="2023-03-08T01:28:12.000Z" itemprop="datePublished">2023-03-08</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/linux/">linux</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/03/08/%E5%AE%89%E8%A3%85compoer/">安装compoer</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h5 id="1-下载composer"><a href="#1-下载composer" class="headerlink" title="1.下载composer"></a>1.下载composer</h5><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -sS https://getcomposer.org/installer | php</span><br></pre></td></tr></table></figure>
+<h5 id="2-将composer-phar移动到-usr-local-bin-composer"><a href="#2-将composer-phar移动到-usr-local-bin-composer" class="headerlink" title="2.将composer.phar移动到&#x2F;usr&#x2F;local&#x2F;bin&#x2F;composer"></a>2.将composer.phar移动到&#x2F;usr&#x2F;local&#x2F;bin&#x2F;composer</h5><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv composer.phar /usr/local/bin/composer</span><br></pre></td></tr></table></figure>
+<h5 id="3-改为中国镜像"><a href="#3-改为中国镜像" class="headerlink" title="3.改为中国镜像"></a>3.改为中国镜像</h5><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">composer config -g repo.packagist composer https://packagist.phpcomposer.com</span><br></pre></td></tr></table></figure>
+<h5 id="4-移除镜像"><a href="#4-移除镜像" class="headerlink" title="4.移除镜像"></a>4.移除镜像</h5><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">composer config -g --unset repos.packagist</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://www.980101.top/2023/03/08/%E5%AE%89%E8%A3%85compoer/" data-id="cm9oc75x9002cn7nrhb9n7zts" data-title="安装compoer" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/" rel="tag">linux</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-腾讯云服务器修改root账号密码" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/03/08/%E8%85%BE%E8%AE%AF%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BF%AE%E6%94%B9root%E8%B4%A6%E5%8F%B7%E5%AF%86%E7%A0%81/" class="article-date">
+  <time class="dt-published" datetime="2023-03-08T01:27:25.000Z" itemprop="datePublished">2023-03-08</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/linux/">linux</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/03/08/%E8%85%BE%E8%AE%AF%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BF%AE%E6%94%B9root%E8%B4%A6%E5%8F%B7%E5%AF%86%E7%A0%81/">腾讯云服务器修改root账号密码</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h5 id="1-通过shell登录服务器"><a href="#1-通过shell登录服务器" class="headerlink" title="1.通过shell登录服务器"></a>1.通过shell登录服务器</h5><h5 id="2-进入云端之后-输入如下命令"><a href="#2-进入云端之后-输入如下命令" class="headerlink" title="2.进入云端之后,输入如下命令"></a>2.进入云端之后,输入如下命令</h5><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo passwd root</span><br></pre></td></tr></table></figure>
+
+<h5 id="3-输入密码-再次输入确认密码"><a href="#3-输入密码-再次输入确认密码" class="headerlink" title="3.输入密码,再次输入确认密码"></a>3.输入密码,再次输入确认密码</h5><h5 id="4-设置成功之后-输入如下命令-并回车"><a href="#4-设置成功之后-输入如下命令-并回车" class="headerlink" title="4.设置成功之后 输入如下命令,并回车"></a>4.设置成功之后 输入如下命令,并回车</h5><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vi /etc/ssh/sshd_config</span><br></pre></td></tr></table></figure>
+
+<h5 id="5-找到Authentication-修改如下"><a href="#5-找到Authentication-修改如下" class="headerlink" title="5.找到Authentication:  修改如下"></a>5.找到Authentication:  修改如下</h5><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">LoginGeaceTime值改为-&gt; <span class="number">120</span></span><br><span class="line">PermitRootLogin值改为-&gt; yes</span><br></pre></td></tr></table></figure>
+<h5 id="6-保存并退出"><a href="#6-保存并退出" class="headerlink" title="6.保存并退出"></a>6.保存并退出</h5><h5 id="7-重启ssh"><a href="#7-重启ssh" class="headerlink" title="7.重启ssh"></a>7.重启ssh</h5><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo service ssh  restart</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://www.980101.top/2023/03/08/%E8%85%BE%E8%AE%AF%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BF%AE%E6%94%B9root%E8%B4%A6%E5%8F%B7%E5%AF%86%E7%A0%81/" data-id="cm9oc75x9002dn7nrcw84db6t" data-title="腾讯云服务器修改root账号密码" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/" rel="tag">linux</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-nginx-php配置文件" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/03/08/nginx-php%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/" class="article-date">
+  <time class="dt-published" datetime="2023-03-08T01:26:36.000Z" itemprop="datePublished">2023-03-08</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/linux/">linux</a>►<a class="article-category-link" href="/categories/linux/nginx/">nginx</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/03/08/nginx-php%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/">nginx+php配置文件</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    listen <span class="number">80</span>;</span><br><span class="line">    server_name test.second.<span class="number">980101</span>.top; # 域名(需要修改)</span><br><span class="line">    root <span class="string">&quot;/data/website/test/&quot;</span>; #目录名(需要修改)</span><br><span class="line"></span><br><span class="line">    <span class="built_in">index</span> <span class="built_in">index</span>.html <span class="built_in">index</span>.htm <span class="built_in">index</span>.php;</span><br><span class="line"></span><br><span class="line">    charset utf-<span class="number">8</span>;</span><br><span class="line"></span><br><span class="line">    location / &#123;</span><br><span class="line">        try_files $uri $uri/ /<span class="built_in">index</span>.php?$query_string;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location = /favicon.ico &#123; access_log off; log_not_found off; &#125;</span><br><span class="line">    location = /robots.txt  &#123; access_log off; log_not_found off; &#125;</span><br><span class="line"></span><br><span class="line">    access_log off;</span><br><span class="line">    error_log  /var/<span class="built_in">log</span>/nginx/test.<span class="built_in">log</span> error; #错误日志位置(需要修改)</span><br><span class="line"></span><br><span class="line">    sendfile off;</span><br><span class="line"></span><br><span class="line">    client_max_body_size <span class="number">100</span><span class="keyword">m</span>;</span><br><span class="line"></span><br><span class="line">    location ~ \.php$ &#123;</span><br><span class="line">        fastcgi_split_path_info ^(.+\.php)(/.+)$;</span><br><span class="line">        fastcgi_pass unix:/var/run/php/php7.<span class="number">2</span>-fpm.sock; </span><br><span class="line">        fastcgi_index <span class="built_in">index</span>.php;</span><br><span class="line">        include fastcgi_params;</span><br><span class="line">        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        fastcgi_intercept_errors off;</span><br><span class="line">        fastcgi_buffer_size <span class="number">16</span><span class="keyword">k</span>;</span><br><span class="line">        fastcgi_buffers <span class="number">4</span> <span class="number">16</span><span class="keyword">k</span>;</span><br><span class="line">        fastcgi_connect_timeout <span class="number">300</span>;</span><br><span class="line">        fastcgi_send_timeout <span class="number">300</span>;</span><br><span class="line">        fastcgi_read_timeout <span class="number">300</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location ~ /\.ht &#123;</span><br><span class="line">        deny <span class="keyword">all</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://www.980101.top/2023/03/08/nginx-php%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/" data-id="cm9oc75x3000nn7nr6pm5hbuy" data-title="nginx+php配置文件" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nginx/" rel="tag">nginx</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Dcat一键生成权限列表-备份菜单等" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/02/06/Dcat%E4%B8%80%E9%94%AE%E7%94%9F%E6%88%90%E6%9D%83%E9%99%90%E5%88%97%E8%A1%A8-%E5%A4%87%E4%BB%BD%E8%8F%9C%E5%8D%95%E7%AD%89/" class="article-date">
+  <time class="dt-published" datetime="2023-02-06T07:36:17.000Z" itemprop="datePublished">2023-02-06</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/laravel/">laravel</a>►<a class="article-category-link" href="/categories/laravel/dcat-admin/">dcat-admin</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/02/06/Dcat%E4%B8%80%E9%94%AE%E7%94%9F%E6%88%90%E6%9D%83%E9%99%90%E5%88%97%E8%A1%A8-%E5%A4%87%E4%BB%BD%E8%8F%9C%E5%8D%95%E7%AD%89/">Dcat一键生成权限列表,备份菜单等</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title class_">App</span>\<span class="title class_">Console</span>\<span class="title class_">Commands</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">use</span> <span class="title">Illuminate</span>\<span class="title">Support</span>\<span class="title">Str</span>;</span><br><span class="line"><span class="keyword">use</span> <span class="title">Illuminate</span>\<span class="title">Console</span>\<span class="title">Command</span>;</span><br><span class="line"><span class="keyword">use</span> <span class="title">Illuminate</span>\<span class="title">Support</span>\<span class="title">Facades</span>\<span class="title">DB</span>;</span><br><span class="line"><span class="keyword">use</span> <span class="title">Illuminate</span>\<span class="title">Support</span>\<span class="title">Facades</span>\<span class="title">Storage</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">GeneratePermission</span> <span class="keyword">extends</span> <span class="title">Command</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="comment">#命令</span></span><br><span class="line">    <span class="keyword">protected</span> <span class="variable">$signature</span> = <span class="string">&#x27;admin:menu-permission&#x27;</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">#描述</span></span><br><span class="line">    <span class="keyword">protected</span> <span class="variable">$description</span> = <span class="string">&#x27;备份菜单,填充菜单数据,填充权限&#x27;</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">#磁盘地址</span></span><br><span class="line">    <span class="keyword">protected</span> <span class="variable">$disk</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">#备份文件路径</span></span><br><span class="line">    <span class="keyword">protected</span> <span class="variable">$backup_path</span> = <span class="string">&#x27;backup/menu.bak&#x27;</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">#菜单模型</span></span><br><span class="line">    <span class="keyword">protected</span> <span class="variable">$menu_model</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">#权限模型</span></span><br><span class="line">    <span class="keyword">protected</span> <span class="variable">$permission_model</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">#菜单,权限中间表名</span></span><br><span class="line">    <span class="keyword">protected</span> <span class="variable">$permission_menu_table</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Create a new command instance.</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> void</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">__construct</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="built_in">parent</span>::<span class="title function_ invoke__">__construct</span>();</span><br><span class="line"></span><br><span class="line">        <span class="variable language_">$this</span>-&gt;menu_model = <span class="title function_ invoke__">config</span>(<span class="string">&#x27;admin.database.menu_model&#x27;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="variable language_">$this</span>-&gt;permission_model = <span class="title function_ invoke__">config</span>(<span class="string">&#x27;admin.database.permissions_model&#x27;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="variable language_">$this</span>-&gt;permission_menu_table = <span class="title function_ invoke__">config</span>(<span class="string">&#x27;admin.database.permission_menu_table&#x27;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="variable language_">$this</span>-&gt;disk = <span class="title class_">Storage</span>::<span class="title function_ invoke__">disk</span>(<span class="title function_ invoke__">config</span>(<span class="string">&#x27;admin.upload.disk&#x27;</span>));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@description</span>:</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@Author</span>:AKE</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@Date</span>:2022/5/7 10:40</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">handle</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="variable">$type</span> = <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">choice</span>(<span class="string">&#x27;请选择要执行的步骤&#x27;</span>, [</span><br><span class="line">            <span class="string">&#x27;备份菜单&#x27;</span>, <span class="string">&#x27;填充权限&#x27;</span>, <span class="string">&#x27;填充菜单&#x27;</span></span><br><span class="line">        ],<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">switch</span> (<span class="variable">$type</span>)&#123;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">&#x27;备份菜单&#x27;</span>:</span><br><span class="line">                <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">generateBackup</span>();</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">&#x27;填充权限&#x27;</span>:</span><br><span class="line">                <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">fillpermission</span>();</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">&#x27;填充菜单&#x27;</span>:</span><br><span class="line">                <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">fillMenu</span>();</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">default</span>:</span><br><span class="line">                <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">error</span>(<span class="string">&#x27;请选择要执行的步骤&#x27;</span>);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@description</span>:生成备份文件</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@Author</span>:AKE</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@Date</span>:2022/5/7 9:46</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="function"><span class="keyword">function</span> <span class="title">generateBackup</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="comment">#获取菜单数据</span></span><br><span class="line">        <span class="variable">$arr</span> = <span class="title function_ invoke__">optional</span>((<span class="keyword">new</span> <span class="variable">$this</span>-&gt;<span class="title function_ invoke__">menu_model</span>())-&gt;<span class="title function_ invoke__">get</span>())-&gt;<span class="title function_ invoke__">toArray</span>();</span><br><span class="line">        <span class="comment">#写入文件</span></span><br><span class="line">        <span class="variable">$res</span> = <span class="variable language_">$this</span>-&gt;disk-&gt;<span class="title function_ invoke__">put</span>(<span class="variable">$this</span>-&gt;backup_path, <span class="title function_ invoke__">serialize</span>(<span class="variable">$arr</span>));</span><br><span class="line">        <span class="variable">$res</span> ? <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">info</span>(<span class="string">&#x27;备份成功&#x27;</span>) : <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">error</span>(<span class="string">&#x27;备份失败&#x27;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@description</span>:填充权限</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@Author</span>:AKE</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@Date</span>:2022/5/7 10:54</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="function"><span class="keyword">function</span> <span class="title">fillPermission</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="variable">$disk</span> = <span class="variable language_">$this</span>-&gt;disk;</span><br><span class="line">        <span class="comment">#判断备份文件是否存在</span></span><br><span class="line">        <span class="variable">$exist</span> = <span class="variable">$disk</span>-&gt;<span class="title function_ invoke__">exists</span>(<span class="variable">$this</span>-&gt;backup_path);</span><br><span class="line">        <span class="keyword">if</span> (!<span class="variable">$exist</span>) &#123;</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">error</span>(<span class="string">&#x27;请先进行菜单备份&#x27;</span>);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">#获取数据并反序列化</span></span><br><span class="line">        <span class="variable">$menu</span> = <span class="title function_ invoke__">unserialize</span>(<span class="variable">$disk</span>-&gt;<span class="title function_ invoke__">get</span>(<span class="variable">$this</span>-&gt;backup_path));</span><br><span class="line">        <span class="comment">#数据组装</span></span><br><span class="line">        <span class="variable">$permission</span> = <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">generatePermissions</span>(<span class="variable">$menu</span>);</span><br><span class="line">        DB::<span class="title function_ invoke__">beginTransaction</span>();</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">info</span>(<span class="string">&#x27;清除权限表...&#x27;</span>);</span><br><span class="line">            <span class="comment">#清空权限表</span></span><br><span class="line">            (<span class="keyword">new</span> <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">permission_model</span>())-&gt;<span class="title function_ invoke__">truncate</span>();</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">info</span>(<span class="string">&#x27;清除完成&#x27;</span>);</span><br><span class="line"></span><br><span class="line">            <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">info</span>(<span class="string">&#x27;填充权限...&#x27;</span>);</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">withProgressBar</span>(<span class="variable">$permission</span>, function (<span class="variable">$permission</span>)&#123;</span><br><span class="line">                <span class="comment">#填充权限表</span></span><br><span class="line">                (<span class="keyword">new</span> <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">permission_model</span>())-&gt;<span class="title function_ invoke__">insert</span>(<span class="variable">$permission</span>);</span><br><span class="line">            &#125;);</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">newLine</span>();</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">info</span>(<span class="string">&#x27;权限填充完成&#x27;</span>);</span><br><span class="line"></span><br><span class="line">            <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">info</span>(<span class="string">&#x27;清除权限菜单中间表...&#x27;</span>);</span><br><span class="line">            <span class="comment">#清空权限,菜单中间表</span></span><br><span class="line">            DB::<span class="title function_ invoke__">table</span>(<span class="variable">$this</span>-&gt;permission_menu_table)-&gt;<span class="title function_ invoke__">truncate</span>();</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">info</span>(<span class="string">&#x27;清除完成&#x27;</span>);</span><br><span class="line"></span><br><span class="line">            <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">info</span>(<span class="string">&#x27;填充权限菜单中间表...&#x27;</span>);</span><br><span class="line">            <span class="variable">$bar</span> = <span class="variable language_">$this</span>-&gt;output-&gt;<span class="title function_ invoke__">createProgressBar</span>(<span class="title function_ invoke__">count</span>(<span class="variable">$permission</span>));</span><br><span class="line">            <span class="variable">$bar</span>-&gt;<span class="title function_ invoke__">start</span>();</span><br><span class="line">            <span class="comment">#循环插入权限菜单中间表</span></span><br><span class="line">            <span class="keyword">foreach</span> (<span class="variable">$permission</span> <span class="keyword">as</span> <span class="variable">$item</span>) &#123;</span><br><span class="line">                <span class="variable">$query</span> = DB::<span class="title function_ invoke__">table</span>(<span class="variable">$this</span>-&gt;permission_menu_table);</span><br><span class="line">                <span class="comment">#菜单id和权限id</span></span><br><span class="line">                <span class="variable">$query</span>-&gt;<span class="title function_ invoke__">insert</span>([</span><br><span class="line">                    <span class="string">&#x27;permission_id&#x27;</span> =&gt; <span class="variable">$item</span>[<span class="string">&#x27;id&#x27;</span>],</span><br><span class="line">                    <span class="string">&#x27;menu_id&#x27;</span>       =&gt; <span class="variable">$item</span>[<span class="string">&#x27;id&#x27;</span>],</span><br><span class="line">                    <span class="string">&#x27;created_at&#x27;</span>    =&gt; <span class="title function_ invoke__">date</span>(<span class="string">&#x27;Y-m-d H:i:s&#x27;</span>),</span><br><span class="line">                    <span class="string">&#x27;updated_at&#x27;</span>    =&gt; <span class="title function_ invoke__">date</span>(<span class="string">&#x27;Y-m-d H:i:s&#x27;</span>),</span><br><span class="line">                ]);</span><br><span class="line">                <span class="comment">#如果不是顶级,则另外绑定父级菜单</span></span><br><span class="line">                <span class="keyword">if</span> (<span class="variable">$item</span>[<span class="string">&#x27;parent_id&#x27;</span>] != <span class="number">0</span>) &#123;</span><br><span class="line">                    <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">recursive</span>(<span class="variable">$item</span>[<span class="string">&#x27;id&#x27;</span>], <span class="variable">$item</span>[<span class="string">&#x27;parent_id&#x27;</span>]);</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="variable">$bar</span>-&gt;<span class="title function_ invoke__">advance</span>();</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="variable">$bar</span>-&gt;<span class="title function_ invoke__">finish</span>();</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">newLine</span>();</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">info</span>(<span class="string">&#x27;权限菜单中间表填充完成&#x27;</span>);</span><br><span class="line">            DB::<span class="title function_ invoke__">commit</span>();</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">info</span>(<span class="string">&#x27;权限填充完成&#x27;</span>);</span><br><span class="line">        &#125;<span class="keyword">catch</span> (\<span class="built_in">Exception</span> <span class="variable">$exception</span>)&#123;</span><br><span class="line">            DB::<span class="title function_ invoke__">rollBack</span>();</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">error</span>(<span class="variable">$exception</span>-&gt;<span class="title function_ invoke__">getMessage</span>());</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">newLine</span>();</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">error</span>(<span class="string">&#x27;权限填充失败&#x27;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@description</span>:递归,添加权限(为了有三级或者四级的菜单的情况)</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> $id</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> $parent_id</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@Author</span>:AKE</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@Date</span>:2022/5/16 16:47</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="function"><span class="keyword">function</span> <span class="title">recursive</span>(<span class="params"><span class="variable">$id</span>, <span class="variable">$parent_id</span></span>)</span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="variable">$parent_id</span> != <span class="number">0</span>)&#123;</span><br><span class="line">            <span class="variable">$query</span> = DB::<span class="title function_ invoke__">table</span>(<span class="variable">$this</span>-&gt;permission_menu_table);</span><br><span class="line">            <span class="variable">$query</span>-&gt;<span class="title function_ invoke__">insert</span>([</span><br><span class="line">                <span class="string">&#x27;permission_id&#x27;</span> =&gt; <span class="variable">$id</span>,</span><br><span class="line">                <span class="string">&#x27;menu_id&#x27;</span> =&gt; <span class="variable">$parent_id</span>,</span><br><span class="line">                <span class="string">&#x27;created_at&#x27;</span>    =&gt; <span class="title function_ invoke__">date</span>(<span class="string">&#x27;Y-m-d H:i:s&#x27;</span>),</span><br><span class="line">                <span class="string">&#x27;updated_at&#x27;</span>    =&gt; <span class="title function_ invoke__">date</span>(<span class="string">&#x27;Y-m-d H:i:s&#x27;</span>),</span><br><span class="line">            ]);</span><br><span class="line">            <span class="variable">$parent_id</span> = (<span class="keyword">new</span> <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">permission_model</span>())-&gt;<span class="title function_ invoke__">where</span>(<span class="string">&#x27;id&#x27;</span>, <span class="variable">$parent_id</span>)-&gt;<span class="title function_ invoke__">value</span>(<span class="string">&#x27;parent_id&#x27;</span>);</span><br><span class="line">            <span class="keyword">if</span> (<span class="variable">$parent_id</span> != <span class="number">0</span>)&#123;</span><br><span class="line">                <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">recursive</span>(<span class="variable">$id</span>, <span class="variable">$parent_id</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@description</span>:填充菜单</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@Author</span>:AKE</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@Date</span>:2022/5/7 13:20</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="function"><span class="keyword">function</span> <span class="title">fillMenu</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="variable">$disk</span> = <span class="variable language_">$this</span>-&gt;disk;</span><br><span class="line">        <span class="comment">#判断备份文件是否存在</span></span><br><span class="line">        <span class="variable">$exist</span> = <span class="variable">$disk</span>-&gt;<span class="title function_ invoke__">exists</span>(<span class="variable">$this</span>-&gt;backup_path);</span><br><span class="line">        <span class="keyword">if</span> (!<span class="variable">$exist</span>) &#123;</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">error</span>(<span class="string">&#x27;请先进行菜单备份&#x27;</span>);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">#获取数据并反序列化</span></span><br><span class="line">        <span class="variable">$menu</span> = <span class="title function_ invoke__">unserialize</span>(<span class="variable">$disk</span>-&gt;<span class="title function_ invoke__">get</span>(<span class="variable">$this</span>-&gt;backup_path));</span><br><span class="line">        DB::<span class="title function_ invoke__">beginTransaction</span>();</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">info</span>(<span class="string">&#x27;清除菜单表...&#x27;</span>);</span><br><span class="line">            <span class="comment">#清空菜单表</span></span><br><span class="line">            (<span class="keyword">new</span> <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">menu_model</span>())-&gt;<span class="title function_ invoke__">truncate</span>();</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">info</span>(<span class="string">&#x27;清除完成&#x27;</span>);</span><br><span class="line"></span><br><span class="line">            <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">info</span>(<span class="string">&#x27;填充菜单...&#x27;</span>);</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">withProgressBar</span>(<span class="variable">$menu</span>, function (<span class="variable">$menu</span>)&#123;</span><br><span class="line">                <span class="comment">#菜单表数据填充</span></span><br><span class="line">                (<span class="keyword">new</span> <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">menu_model</span>())-&gt;<span class="title function_ invoke__">insert</span>(<span class="variable">$menu</span>);</span><br><span class="line">            &#125;);</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">newLine</span>();</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">info</span>(<span class="string">&#x27;菜单填充完成&#x27;</span>);</span><br><span class="line">            DB::<span class="title function_ invoke__">commit</span>();</span><br><span class="line">        &#125;<span class="keyword">catch</span> (\<span class="built_in">Exception</span> <span class="variable">$exception</span>)&#123;</span><br><span class="line">            DB::<span class="title function_ invoke__">rollBack</span>();</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">error</span>(<span class="variable">$exception</span>-&gt;<span class="title function_ invoke__">getMessage</span>());</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">newLine</span>();</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">error</span>(<span class="string">&#x27;填充失败&#x27;</span>);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@description</span>:生成权限</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> $menu</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> array</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@Author</span>:AKE</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@Date</span>:2022/5/7 10:47</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="function"><span class="keyword">function</span> <span class="title">generatePermissions</span>(<span class="params"><span class="variable">$menu</span></span>)</span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="variable">$permissions</span> = [];</span><br><span class="line">        <span class="comment">#循环整合数据</span></span><br><span class="line">        <span class="keyword">foreach</span> (<span class="variable">$menu</span> <span class="keyword">as</span> <span class="variable">$item</span>) &#123;</span><br><span class="line">            <span class="comment">#第一条不加入权限(第一条为主页,默认所有管理员都可以看到)</span></span><br><span class="line">            <span class="keyword">if</span> (<span class="variable">$item</span>[<span class="string">&#x27;id&#x27;</span>] == <span class="number">1</span>) <span class="keyword">continue</span>;</span><br><span class="line">            <span class="variable">$temp</span> = [];</span><br><span class="line"></span><br><span class="line">            <span class="variable">$temp</span>[<span class="string">&#x27;id&#x27;</span>] = <span class="variable">$item</span>[<span class="string">&#x27;id&#x27;</span>];</span><br><span class="line">            <span class="variable">$temp</span>[<span class="string">&#x27;name&#x27;</span>] = <span class="variable">$item</span>[<span class="string">&#x27;title&#x27;</span>];</span><br><span class="line">            <span class="variable">$temp</span>[<span class="string">&#x27;slug&#x27;</span>] = (<span class="keyword">string</span>)<span class="title class_">Str</span>::<span class="title function_ invoke__">uuid</span>();</span><br><span class="line">            <span class="variable">$temp</span>[<span class="string">&#x27;http_path&#x27;</span>] = <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">getHttpPath</span>(<span class="variable">$item</span>[<span class="string">&#x27;uri&#x27;</span>]);</span><br><span class="line">            <span class="variable">$temp</span>[<span class="string">&#x27;order&#x27;</span>] = <span class="variable">$item</span>[<span class="string">&#x27;order&#x27;</span>];</span><br><span class="line">            <span class="variable">$temp</span>[<span class="string">&#x27;parent_id&#x27;</span>] = <span class="variable">$item</span>[<span class="string">&#x27;parent_id&#x27;</span>];</span><br><span class="line">            <span class="variable">$temp</span>[<span class="string">&#x27;created_at&#x27;</span>] = <span class="title function_ invoke__">date</span>(<span class="string">&#x27;Y-m-d H:i:s&#x27;</span>);</span><br><span class="line">            <span class="variable">$temp</span>[<span class="string">&#x27;updated_at&#x27;</span>] = <span class="title function_ invoke__">date</span>(<span class="string">&#x27;Y-m-d H:i:s&#x27;</span>);</span><br><span class="line"></span><br><span class="line">            <span class="variable">$permissions</span>[] = <span class="variable">$temp</span>;</span><br><span class="line">            <span class="keyword">unset</span>(<span class="variable">$temp</span>);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> <span class="variable">$permissions</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@description</span>:生成权限链接</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> $uri</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> string</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@Author</span>:AKE</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@Date</span>:2022/5/7 10:47</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="function"><span class="keyword">function</span> <span class="title">getHttpPath</span>(<span class="params"><span class="variable">$uri</span></span>)</span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="variable">$uri</span> == <span class="string">&#x27;/&#x27;</span> || <span class="variable">$uri</span> == <span class="string">&#x27;&#x27;</span>) <span class="keyword">return</span> <span class="string">&#x27;&#x27;</span>;</span><br><span class="line">        <span class="keyword">if</span> (<span class="title function_ invoke__">strpos</span>(<span class="variable">$uri</span>, <span class="string">&#x27;/&#x27;</span>) !== <span class="number">0</span>)  <span class="variable">$uri</span> = <span class="string">&#x27;/&#x27;</span> . <span class="variable">$uri</span>;</span><br><span class="line">        <span class="comment">#为了防止有两个一样的路由故这样写,例如 /index 和 /index-a 等</span></span><br><span class="line">        <span class="comment">#如果没有可以直接写成 $uri . &#x27;*&#x27;</span></span><br><span class="line">        <span class="keyword">return</span> <span class="variable">$uri</span> . <span class="string">&#x27;,&#x27;</span> . <span class="variable">$uri</span> . <span class="string">&#x27;/*&#x27;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://www.980101.top/2023/02/06/Dcat%E4%B8%80%E9%94%AE%E7%94%9F%E6%88%90%E6%9D%83%E9%99%90%E5%88%97%E8%A1%A8-%E5%A4%87%E4%BB%BD%E8%8F%9C%E5%8D%95%E7%AD%89/" data-id="cm9oc75x00008n7nrdgvfh3ar" data-title="Dcat一键生成权限列表,备份菜单等" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dcat-admin/" rel="tag">dcat-admin</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/" rel="tag">命令行</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-ckeditor文件上传并在dcat中使用" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/02/06/ckeditor%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%B9%B6%E5%9C%A8dcat%E4%B8%AD%E4%BD%BF%E7%94%A8/" class="article-date">
+  <time class="dt-published" datetime="2023-02-06T07:34:29.000Z" itemprop="datePublished">2023-02-06</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/laravel/">laravel</a>►<a class="article-category-link" href="/categories/laravel/dcat-admin/">dcat-admin</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/02/06/ckeditor%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%B9%B6%E5%9C%A8dcat%E4%B8%AD%E4%BD%BF%E7%94%A8/">ckeditor文件上传并在dcat中使用</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h5 id="去掉预览中的文字"><a href="#去掉预览中的文字" class="headerlink" title="去掉预览中的文字"></a>去掉预览中的文字</h5><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 为了去掉预览中的文字</span></span><br><span class="line">在ckeditor/plugins/image/dialogs/image.js</span><br><span class="line">搜索“d.config.image_previewText”，把(d.config.image_previewText||”)加粗的内容全删了。</span><br></pre></td></tr></table></figure>
+<h5 id="开启上传功能"><a href="#开启上传功能" class="headerlink" title="开启上传功能"></a>开启上传功能</h5><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">在ckeditor/plugins/image/dialogs/image.js</span><br><span class="line">搜索：id:’Upload’,hidden:!<span class="number">0</span></span><br><span class="line">实际上上传功能被隐藏了，把上面的!<span class="number">0</span>改成<span class="literal">false</span>。</span><br></pre></td></tr></table></figure>
+
+<h5 id="定义上传文件时的action"><a href="#定义上传文件时的action" class="headerlink" title="定义上传文件时的action"></a>定义上传文件时的action</h5><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">config.filebrowserUploadUrl = <span class="string">&#x27;/index.php?action=address&amp;do=upload&#x27;</span>; <span class="comment">//地址自定义</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="在php处理文件中加入upload方法"><a href="#在php处理文件中加入upload方法" class="headerlink" title="在php处理文件中加入upload方法;"></a>在php处理文件中加入upload方法;</h5><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$name</span> = <span class="string">&#x27;upload&#x27;</span>;</span><br><span class="line">      <span class="keyword">if</span> (<span class="variable">$request</span>-&gt;<span class="title function_ invoke__">hasFile</span>(<span class="variable">$name</span>))&#123;</span><br><span class="line">          <span class="comment">//获取文件</span></span><br><span class="line">          <span class="variable">$file</span> = <span class="variable">$request</span>-&gt;<span class="title function_ invoke__">file</span>(<span class="variable">$name</span>);</span><br><span class="line">          <span class="variable">$time</span> = <span class="title function_ invoke__">date</span>(<span class="string">&#x27;Ymd&#x27;</span>,<span class="title function_ invoke__">time</span>());</span><br><span class="line">          <span class="comment">// 文件是否上传成功</span></span><br><span class="line">          <span class="keyword">if</span> (<span class="variable">$file</span>-&gt;<span class="title function_ invoke__">isValid</span>()) &#123;</span><br><span class="line">              <span class="comment">// 获取文件相关信息</span></span><br><span class="line">              <span class="variable">$originalName</span> = <span class="variable">$file</span>-&gt;<span class="title function_ invoke__">getClientOriginalName</span>(); <span class="comment">// 文件原名</span></span><br><span class="line">              <span class="variable">$ext</span> = <span class="variable">$file</span>-&gt;<span class="title function_ invoke__">getClientOriginalExtension</span>();     <span class="comment">// 扩展名</span></span><br><span class="line">              <span class="variable">$realPath</span> = <span class="variable">$file</span>-&gt;<span class="title function_ invoke__">getRealPath</span>();   <span class="comment">//临时文件的绝对路径</span></span><br><span class="line">              <span class="variable">$type</span> = <span class="variable">$file</span>-&gt;<span class="title function_ invoke__">getClientMimeType</span>();     <span class="comment">// image/jpeg</span></span><br><span class="line">              <span class="comment">// 上传文件</span></span><br><span class="line">              <span class="variable">$filename</span> = <span class="title function_ invoke__">uniqid</span>() . <span class="string">&#x27;.&#x27;</span> . <span class="variable">$ext</span>;</span><br><span class="line">              <span class="variable">$path</span> = <span class="string">&#x27;editor/&#x27;</span>.<span class="variable">$time</span>.<span class="string">&#x27;/&#x27;</span>.<span class="variable">$filename</span>;</span><br><span class="line">              <span class="comment">//这里的uploads是配置文件的名称</span></span><br><span class="line">              <span class="variable">$bool</span> = <span class="title class_">Storage</span>::<span class="title function_ invoke__">disk</span>(<span class="string">&#x27;admin&#x27;</span>)-&gt;<span class="title function_ invoke__">put</span>(<span class="string">&#x27;/&#x27;</span>.<span class="variable">$path</span>, <span class="title function_ invoke__">file_get_contents</span>(<span class="variable">$realPath</span>));</span><br><span class="line">              <span class="comment">//判断是否创建成功</span></span><br><span class="line">              <span class="keyword">if</span> (!<span class="variable">$bool</span>) <span class="keyword">return</span> <span class="title function_ invoke__">response</span>()-&gt;<span class="title function_ invoke__">json</span>([</span><br><span class="line">                  <span class="string">&#x27;uploaded&#x27;</span> =&gt; <span class="number">0</span>,</span><br><span class="line">                  <span class="string">&#x27;error&#x27;</span> =&gt; <span class="string">&#x27;上传失败&#x27;</span>,</span><br><span class="line">              ]);</span><br><span class="line">              <span class="keyword">return</span> <span class="title function_ invoke__">response</span>()-&gt;<span class="title function_ invoke__">json</span>([</span><br><span class="line">                  <span class="string">&#x27;uploaded&#x27;</span> =&gt; <span class="number">1</span>,</span><br><span class="line">                  <span class="string">&quot;fileName&quot;</span> =&gt; <span class="variable">$filename</span>,</span><br><span class="line">                  <span class="string">&quot;url&quot;</span> =&gt; <span class="string">&#x27;/upload/&#x27;</span>.<span class="variable">$path</span></span><br><span class="line">              ]);</span><br><span class="line">          &#125;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">return</span> <span class="title function_ invoke__">response</span>()-&gt;<span class="title function_ invoke__">json</span>([</span><br><span class="line">          <span class="string">&#x27;uploaded&#x27;</span> =&gt; <span class="number">0</span>,</span><br><span class="line">          <span class="string">&#x27;error&#x27;</span> =&gt; <span class="string">&#x27;上传失败&#x27;</span>,</span><br><span class="line">      ]);</span><br></pre></td></tr></table></figure>
+
+
+<h5 id="bootstrap中引用"><a href="#bootstrap中引用" class="headerlink" title="bootstrap中引用"></a>bootstrap中引用</h5><blockquote>
+<p>注册前端组件别名</p>
+</blockquote>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//(/dcat/editor/ 即你ckeditor存放目录,</span></span><br><span class="line"><span class="comment">//这里放在了,public/dcat/editor/ckeditor)</span></span><br><span class="line"><span class="title class_">Admin</span>::<span class="title function_ invoke__">asset</span>()-&gt;<span class="title function_ invoke__">alias</span>(<span class="string">&#x27;@ckeditor&#x27;</span>, [</span><br><span class="line">    <span class="string">&#x27;js&#x27;</span> =&gt; [</span><br><span class="line">        <span class="string">&#x27;/dcat/editor/ckeditor/ckeditor.js&#x27;</span>,</span><br><span class="line">        <span class="string">&#x27;/dcat/editor/ckeditor/adapters/jquery.js&#x27;</span>,</span><br><span class="line">    ],</span><br><span class="line">]);</span><br></pre></td></tr></table></figure>
+
+<h5 id="在Admin-Extensions-Form创建一个php文件-命名为CKEditor"><a href="#在Admin-Extensions-Form创建一个php文件-命名为CKEditor" class="headerlink" title="在Admin&#x2F;Extensions&#x2F;Form创建一个php文件(命名为CKEditor)"></a>在Admin&#x2F;Extensions&#x2F;Form创建一个php文件(命名为CKEditor)</h5><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> <span class="keyword">namespace</span> <span class="title class_">App</span>\<span class="title class_">Admin</span>\<span class="title class_">Extensions</span>\<span class="title class_">Form</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">use</span> <span class="title">Dcat</span>\<span class="title">Admin</span>\<span class="title">Form</span>\<span class="title">Field</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">CKEditor</span> <span class="keyword">extends</span> <span class="title">Field</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="comment">// 视图文件路径</span></span><br><span class="line">    <span class="keyword">protected</span> <span class="variable">$view</span> = <span class="string">&#x27;admin.editor.ckeditor&#x27;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h5 id="在bootstrap注册组件"><a href="#在bootstrap注册组件" class="headerlink" title="在bootstrap注册组件"></a>在bootstrap注册组件</h5><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">use</span> <span class="title">App</span>\<span class="title">Admin</span>\<span class="title">Extensions</span>\<span class="title">Form</span>\<span class="title">CKEditor</span>;</span><br><span class="line"><span class="title class_">Form</span>::<span class="title function_ invoke__">extend</span>(<span class="string">&#x27;ckeditor&#x27;</span>, <span class="title class_">CKEditor</span>::<span class="variable language_">class</span>);</span><br></pre></td></tr></table></figure>
+
+<h5 id="调用"><a href="#调用" class="headerlink" title="调用"></a>调用</h5><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$form</span>-&gt;<span class="title function_ invoke__">ckeditor</span>(<span class="string">&#x27;content&#x27;</span>);</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://www.980101.top/2023/02/06/ckeditor%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%B9%B6%E5%9C%A8dcat%E4%B8%AD%E4%BD%BF%E7%94%A8/" data-id="cm9oc75x1000cn7nracg5hrc1" data-title="ckeditor文件上传并在dcat中使用" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ckeditor/" rel="tag">ckeditor</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dcat-admin/" rel="tag">dcat-admin</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Dcat插件" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/02/06/Dcat%E6%8F%92%E4%BB%B6/" class="article-date">
+  <time class="dt-published" datetime="2023-02-06T07:33:47.000Z" itemprop="datePublished">2023-02-06</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/laravel/">laravel</a>►<a class="article-category-link" href="/categories/laravel/dcat-admin/">dcat-admin</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/02/06/Dcat%E6%8F%92%E4%BB%B6/">Dcat插件</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h4 id="百度编辑器"><a href="#百度编辑器" class="headerlink" title="百度编辑器"></a>百度编辑器</h4><blockquote>
+<p>composer 安装</p>
+</blockquote>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">composer require weiaibaicai/ueditor</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>启用插件</p>
+</blockquote>
+<p>开发工具 -&gt; 扩展 -&gt; weiaibaicai.ueditor -&gt; 升级 -&gt; 启用</p>
+<blockquote>
+<p>发布配置 ueditor.php</p>
+</blockquote>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">php artisan vendor:publish --provider=&quot;Weiaibaicai\Ueditor\UeditorServiceProvider&quot;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>方法使用</p>
+</blockquote>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$form</span>-&gt;<span class="title function_ invoke__">ueditor</span>(<span class="string">&#x27;content&#x27;</span>);</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://www.980101.top/2023/02/06/Dcat%E6%8F%92%E4%BB%B6/" data-id="cm9oc75wz0007n7nr3cck6695" data-title="Dcat插件" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dcat-admin/" rel="tag">dcat-admin</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Dcat易错保存" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/09/01/Dcat%E6%98%93%E9%94%99%E4%BF%9D%E5%AD%98/" class="article-date">
+  <time class="dt-published" datetime="2022-09-01T03:06:49.000Z" itemprop="datePublished">2022-09-01</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/laravel/">laravel</a>►<a class="article-category-link" href="/categories/laravel/dcat-admin/">dcat-admin</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/09/01/Dcat%E6%98%93%E9%94%99%E4%BF%9D%E5%AD%98/">Dcat易错保存</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h4 id="使用form表单中的array组件"><a href="#使用form表单中的array组件" class="headerlink" title="使用form表单中的array组件"></a>使用form表单中的array组件</h4><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># array字段的名字和内部生成的名字不能一致，不然保存会出现问题代码如下：</span></span><br><span class="line"><span class="comment">#错误示例</span></span><br><span class="line"><span class="variable">$form</span>-&gt;<span class="keyword">array</span>(<span class="string">&#x27;content&#x27;</span>, <span class="function"><span class="keyword">function</span> (<span class="params">Form\NestedForm <span class="variable">$form</span></span>)</span>&#123;</span><br><span class="line">     <span class="variable">$form</span>-&gt;<span class="title function_ invoke__">editor</span>(<span class="string">&#x27;content&#x27;</span>, <span class="string">&#x27;内容&#x27;</span>)-&gt;<span class="title function_ invoke__">required</span>();</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">#正确 (content 和 contents 要区分开)</span></span><br><span class="line"><span class="variable">$form</span>-&gt;<span class="keyword">array</span>(<span class="string">&#x27;content&#x27;</span>, <span class="function"><span class="keyword">function</span> (<span class="params">Form\NestedForm <span class="variable">$form</span></span>)</span>&#123;</span><br><span class="line">     <span class="variable">$form</span>-&gt;<span class="title function_ invoke__">editor</span>(<span class="string">&#x27;contents&#x27;</span>, <span class="string">&#x27;内容&#x27;</span>)-&gt;<span class="title function_ invoke__">required</span>();</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h4 id="使用多图上传"><a href="#使用多图上传" class="headerlink" title="使用多图上传"></a>使用多图上传</h4><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#如果出现 foreach之类的报错，可以在后面添加autoSave(false)即可;</span></span><br><span class="line"><span class="comment">#示例</span></span><br><span class="line">  <span class="variable">$form</span>-&gt;<span class="title function_ invoke__">multipleImage</span>(<span class="string">&#x27;img&#x27;</span>, <span class="string">&#x27;图片&#x27;</span>)</span><br><span class="line">  		-&gt;<span class="title function_ invoke__">autoUpload</span>()-&gt;<span class="title function_ invoke__">uniqueName</span>()-&gt;<span class="title function_ invoke__">required</span>()</span><br><span class="line">  		-&gt;<span class="title function_ invoke__">removable</span>(<span class="literal">false</span>)-&gt;<span class="title function_ invoke__">autoSave</span>(<span class="literal">false</span>)</span><br></pre></td></tr></table></figure>
+
+<h4 id="form工具表单"><a href="#form工具表单" class="headerlink" title="form工具表单"></a>form工具表单</h4><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#在工具表单中使用array之类的json组件，并在json组件中使用图片上传，后续会无法修改</span></span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://www.980101.top/2022/09/01/Dcat%E6%98%93%E9%94%99%E4%BF%9D%E5%AD%98/" data-id="cm9oc75wz0006n7nr2z5oarvh" data-title="Dcat易错保存" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dcat-admin/" rel="tag">dcat-admin</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-sql命令行" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/08/24/sql%E5%91%BD%E4%BB%A4%E8%A1%8C/" class="article-date">
+  <time class="dt-published" datetime="2022-08-24T07:55:02.000Z" itemprop="datePublished">2022-08-24</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/mysql/">mysql</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/08/24/sql%E5%91%BD%E4%BB%A4%E8%A1%8C/">sql命令行</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h5 id="查看所有数据库"><a href="#查看所有数据库" class="headerlink" title="查看所有数据库"></a>查看所有数据库</h5><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show  databases;</span><br></pre></td></tr></table></figure>
+
+<h5 id="切换数据库"><a href="#切换数据库" class="headerlink" title="切换数据库"></a>切换数据库</h5><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">use mysql;</span><br></pre></td></tr></table></figure>
+
+<h5 id="查看当前数据库所有表"><a href="#查看当前数据库所有表" class="headerlink" title="查看当前数据库所有表"></a>查看当前数据库所有表</h5><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show tables;</span><br></pre></td></tr></table></figure>
+
+<h5 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h5><blockquote>
+<p>此处数据库名要以字母开头</p>
+</blockquote>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">create database a_111; </span><br></pre></td></tr></table></figure>
+
+<h5 id="创建数据库用户-mysql8-0以前"><a href="#创建数据库用户-mysql8-0以前" class="headerlink" title="创建数据库用户(mysql8.0以前)"></a>创建数据库用户(mysql8.0以前)</h5><blockquote>
+<p>注意此处的数据库名是被 &#96;&#96;所包括,并不是被单引号所包括</p>
+</blockquote>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grant all on `数据库`.* to &#x27;用户名&#x27;@&#x27;%&#x27; identified by &#x27;密码&#x27;;</span><br></pre></td></tr></table></figure>
+
+<h5 id="创建数据库用户-mysql8-0"><a href="#创建数据库用户-mysql8-0" class="headerlink" title="创建数据库用户(mysql8.0)"></a>创建数据库用户(mysql8.0)</h5><blockquote>
+<ol>
+<li>创建新用户()</li>
+</ol>
+</blockquote>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">create user `用户名`@`host` identified by &#x27;密码&#x27;;</span><br></pre></td></tr></table></figure>
+
+<p>注:host是可写%即任意ip都可访问,或者写localhost即只能本地访问</p>
+<blockquote>
+<p>2.赋予权限</p>
+</blockquote>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grant all privileges on `数据库名`.* to `用户名`@&#x27;%&#x27; with grant option;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>3.授权成功后刷新权限</p>
+</blockquote>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flush privileges;</span><br></pre></td></tr></table></figure>
+
+<h5 id="取消权限"><a href="#取消权限" class="headerlink" title="取消权限"></a>取消权限</h5><blockquote>
+<p>用户有什么权限就撤什么权限</p>
+</blockquote>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">revoke all privileges on *.* from &#x27;test1&#x27;@&#x27;localhost&#x27;;</span><br></pre></td></tr></table></figure>
+
+<h5 id="删除用户"><a href="#删除用户" class="headerlink" title="删除用户"></a>删除用户</h5><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">drop user &#x27;test1&#x27;@&#x27;localhost&#x27;;</span><br></pre></td></tr></table></figure>
+
+<h5 id="修改密码"><a href="#修改密码" class="headerlink" title="修改密码"></a>修改密码</h5><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alter user &#x27;laravel&#x27;@&#x27;localhost&#x27; identified with MYSQL_NATIVE_PASSWORD by &#x27;laravel@<span class="number">123</span>&#x27;;</span><br></pre></td></tr></table></figure>
+
+<h5 id="修改数据库可外部连接"><a href="#修改数据库可外部连接" class="headerlink" title="修改数据库可外部连接"></a>修改数据库可外部连接</h5><blockquote>
+<p>此方式只适用于mysql8 以下</p>
+</blockquote>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">到mysql目录下找到配置文件,即mysqld.cnf(可能此文件有很多个,找到正在执行的那个)</span><br><span class="line">把 bind-address的值从<span class="number">127</span>.<span class="number">0</span>.<span class="number">0</span>.<span class="number">1</span>改为<span class="number">0</span>.<span class="number">0</span>.<span class="number">0</span>.<span class="number">0</span></span><br><span class="line">然后保存,重启服务</span><br><span class="line">即可外部访问</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>mysql8 只需要赋予账号host&#x3D;%即可</p>
+</blockquote>
+<h5 id="导入导出sql文件"><a href="#导入导出sql文件" class="headerlink" title="导入导出sql文件"></a>导入导出sql文件</h5><blockquote>
+<p>导出</p>
+</blockquote>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqldump -uroot -p 数据库名 &gt; 文件.sql </span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>导入</p>
+</blockquote>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>.在命令行不进入mysql操作</span><br><span class="line">mysql -uroot -p 数据库名 &lt; 文件.sql</span><br><span class="line"></span><br><span class="line"><span class="number">2</span>.进入mysql操作</span><br><span class="line">mysql -uroot -p</span><br><span class="line">use 数据库名;</span><br><span class="line">source /data/sql/文件.sql;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://www.980101.top/2022/08/24/sql%E5%91%BD%E4%BB%A4%E8%A1%8C/" data-id="cm9oc75x4000sn7nr3a7p09ao" data-title="sql命令行" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mysql/" rel="tag">mysql</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sql/" rel="tag">sql</a></li></ul>
 
     </footer>
   </div>
@@ -168,6 +714,11 @@
 
   
 
+
+  <nav id="page-nav">
+    
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">下一页 &raquo;</a>
+  </nav>
 
 </section>
         
@@ -177,7 +728,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">分类</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Category1/">Category1</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/docker/">docker</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/laravel/">laravel</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/laravel/dcat-admin/">dcat-admin</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/">linux</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/linux/nginx/">nginx</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/mysql/">mysql</a></li></ul>
     </div>
   </div>
 
@@ -187,7 +738,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/tag1/" rel="tag">tag1</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tag2/" rel="tag">tag2</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/ckeditor/" rel="tag">ckeditor</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dcat-admin/" rel="tag">dcat-admin</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/docker/" rel="tag">docker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jwt/" rel="tag">jwt</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/" rel="tag">mysql</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nginx/" rel="tag">nginx</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sql/" rel="tag">sql</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%91%BD%E4%BB%A4/" rel="tag">命令</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/" rel="tag">命令行</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%A1%86%E6%9E%B6/" rel="tag">框架</a></li></ul>
     </div>
   </div>
 
@@ -197,7 +748,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/tag1/" style="font-size: 10px;">tag1</a> <a href="/tags/tag2/" style="font-size: 10px;">tag2</a>
+      <a href="/tags/ckeditor/" style="font-size: 10px;">ckeditor</a> <a href="/tags/dcat-admin/" style="font-size: 20px;">dcat-admin</a> <a href="/tags/docker/" style="font-size: 10px;">docker</a> <a href="/tags/jwt/" style="font-size: 10px;">jwt</a> <a href="/tags/linux/" style="font-size: 16.67px;">linux</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/nginx/" style="font-size: 10px;">nginx</a> <a href="/tags/sql/" style="font-size: 10px;">sql</a> <a href="/tags/%E5%91%BD%E4%BB%A4/" style="font-size: 10px;">命令</a> <a href="/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/" style="font-size: 10px;">命令行</a> <a href="/tags/%E6%A1%86%E6%9E%B6/" style="font-size: 13.33px;">框架</a>
     </div>
   </div>
 
@@ -206,7 +757,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/04/">四月 2025</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/05/">五月 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/03/">三月 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">二月 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">九月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">八月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/07/">七月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">六月 2022</a></li></ul>
     </div>
   </div>
 
@@ -219,11 +770,23 @@
       <ul>
         
           <li>
-            <a href="/2025/04/16/hello-world/">Hello World</a>
+            <a href="/2024/05/10/docker%E6%9F%A5%E7%9C%8B%E6%97%A5%E5%BF%97/">docker查看日志</a>
           </li>
         
           <li>
-            <a href="/2025/04/15/My-New-Article/">My New Article</a>
+            <a href="/2023/03/24/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">Linux常用命令</a>
+          </li>
+        
+          <li>
+            <a href="/2023/03/08/%E5%AE%89%E8%A3%85compoer/">安装compoer</a>
+          </li>
+        
+          <li>
+            <a href="/2023/03/08/%E8%85%BE%E8%AE%AF%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BF%AE%E6%94%B9root%E8%B4%A6%E5%8F%B7%E5%AF%86%E7%A0%81/">腾讯云服务器修改root账号密码</a>
+          </li>
+        
+          <li>
+            <a href="/2023/03/08/nginx-php%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/">nginx+php配置文件</a>
           </li>
         
       </ul>

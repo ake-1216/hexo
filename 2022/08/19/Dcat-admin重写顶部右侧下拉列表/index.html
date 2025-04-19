@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Dcat-admin重写顶部右侧下拉列表 | 阿珂的个人博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="第一步 创建重写右侧下拉列表页面 在resource&#x2F;view&#x2F;admin&#x2F;partials下创建navbar-user-panel.blade.php(路径,文件名可以自定义) 复制下拉列表内容,在vendor&#x2F;dcat&#x2F;laravel-admin&#x2F;resource&#x2F;view&#x2F;partials下的navbar-use">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Dcat-admin重写顶部右侧下拉列表">
+<meta property="og:url" content="https://www.980101.top/2022/08/19/Dcat-admin%E9%87%8D%E5%86%99%E9%A1%B6%E9%83%A8%E5%8F%B3%E4%BE%A7%E4%B8%8B%E6%8B%89%E5%88%97%E8%A1%A8/index.html">
+<meta property="og:site_name" content="阿珂的个人博客">
+<meta property="og:description" content="第一步 创建重写右侧下拉列表页面 在resource&#x2F;view&#x2F;admin&#x2F;partials下创建navbar-user-panel.blade.php(路径,文件名可以自定义) 复制下拉列表内容,在vendor&#x2F;dcat&#x2F;laravel-admin&#x2F;resource&#x2F;view&#x2F;partials下的navbar-use">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-08-19T07:10:45.000Z">
+<meta property="article:modified_time" content="2025-04-19T14:42:27.352Z">
+<meta property="article:author" content="阿珂">
+<meta property="article:tag" content="dcat-admin">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="阿珂的个人博客" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">阿珂的个人博客</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">首页</a>
+        
+          <a class="main-nav-link" href="/archives">活动</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS 订阅"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="搜索"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://www.980101.top"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-Dcat-admin重写顶部右侧下拉列表" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/08/19/Dcat-admin%E9%87%8D%E5%86%99%E9%A1%B6%E9%83%A8%E5%8F%B3%E4%BE%A7%E4%B8%8B%E6%8B%89%E5%88%97%E8%A1%A8/" class="article-date">
+  <time class="dt-published" datetime="2022-08-19T07:10:45.000Z" itemprop="datePublished">2022-08-19</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/laravel/">laravel</a>►<a class="article-category-link" href="/categories/laravel/dcat-admin/">dcat-admin</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Dcat-admin重写顶部右侧下拉列表
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h5 id="第一步-创建重写右侧下拉列表页面"><a href="#第一步-创建重写右侧下拉列表页面" class="headerlink" title="第一步 创建重写右侧下拉列表页面"></a>第一步 创建重写右侧下拉列表页面</h5><blockquote>
+<p>在resource&#x2F;view&#x2F;admin&#x2F;partials下创建navbar-user-panel.blade.php(路径,文件名可以自定义)</p>
+<p>复制下拉列表内容,在vendor&#x2F;dcat&#x2F;laravel-admin&#x2F;resource&#x2F;view&#x2F;partials下的navbar-user-panel.blade.php</p>
+</blockquote>
+<p><strong>代码内容如下</strong></p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">if</span>(<span class="variable">$user</span>)</span><br><span class="line">&lt;li <span class="class"><span class="keyword">class</span>=&quot;<span class="title">dropdown</span> <span class="title">dropdown</span>-<span class="title">user</span> <span class="title">nav</span>-<span class="title">item</span>&quot;&gt;</span></span><br><span class="line"><span class="class">    &lt;<span class="title">a</span> <span class="title">class</span>=&quot;<span class="title">dropdown</span>-<span class="title">toggle</span> <span class="title">nav</span>-<span class="title">link</span> <span class="title">dropdown</span>-<span class="title">user</span>-<span class="title">link</span>&quot; <span class="title">href</span>=&quot;#&quot; <span class="title">data</span>-<span class="title">toggle</span>=&quot;<span class="title">dropdown</span>&quot;&gt;</span></span><br><span class="line"><span class="class">        &lt;<span class="title">div</span> <span class="title">class</span>=&quot;<span class="title">user</span>-<span class="title">nav</span> <span class="title">d</span>-<span class="title">sm</span>-<span class="title">flex</span> <span class="title">d</span>-<span class="title">none</span>&quot;&gt;</span></span><br><span class="line"><span class="class">            &lt;<span class="title">span</span> <span class="title">class</span>=&quot;<span class="title">user</span>-<span class="title">name</span> <span class="title">text</span>-<span class="title">bold</span>-600&quot;&gt;</span>&#123;&#123; <span class="variable">$user</span>-&gt;name &#125;&#125;&lt;/span&gt;</span><br><span class="line">            &lt;span <span class="class"><span class="keyword">class</span>=&quot;<span class="title">user</span>-<span class="title">status</span>&quot;&gt;&lt;<span class="title">i</span> <span class="title">class</span>=&quot;<span class="title">fa</span> <span class="title">fa</span>-<span class="title">circle</span> <span class="title">text</span>-<span class="title">success</span>&quot;&gt;&lt;/<span class="title">i</span>&gt; </span>&#123;&#123; <span class="title function_ invoke__">trans</span>(<span class="string">&#x27;admin.online&#x27;</span>) &#125;&#125;&lt;/span&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">        &lt;span&gt;</span><br><span class="line">            &lt;img <span class="class"><span class="keyword">class</span>=&quot;<span class="title">round</span>&quot; <span class="title">src</span>=&quot;%7<span class="title">B</span>%7<span class="title">B</span>%20%24<span class="title">user</span>-&gt;<span class="title">getAvatar</span>()%20%7<span class="title">D</span>%7<span class="title">D</span>&quot; <span class="title">alt</span>=&quot;<span class="title">avatar</span>&quot; <span class="title">height</span>=&quot;40&quot; <span class="title">width</span>=&quot;40&quot;&gt;&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line"><span class="class">    &lt;/<span class="title">a</span>&gt;</span></span><br><span class="line"><span class="class">    &lt;<span class="title">div</span> <span class="title">class</span>=&quot;<span class="title">dropdown</span>-<span class="title">menu</span> <span class="title">dropdown</span>-<span class="title">menu</span>-<span class="title">right</span>&quot;&gt;</span></span><br><span class="line"><span class="class">        &lt;<span class="title">a</span> <span class="title">href</span>=&quot;%7<span class="title">B</span>%7<span class="title">B</span>%20<span class="title">admin_url</span>(&#x27;<span class="title">auth</span>/<span class="title">setting</span>&#x27;)%20%7<span class="title">D</span>%7<span class="title">D</span>&quot; <span class="title">class</span>=&quot;<span class="title">dropdown</span>-<span class="title">item</span>&quot;&gt;</span></span><br><span class="line"><span class="class">            &lt;<span class="title">i</span> <span class="title">class</span>=&quot;<span class="title">feather</span> <span class="title">icon</span>-<span class="title">user</span>&quot;&gt;&lt;/<span class="title">i</span>&gt; </span>&#123;&#123; <span class="title function_ invoke__">trans</span>(<span class="string">&#x27;admin.setting&#x27;</span>) &#125;&#125;</span><br><span class="line">        &lt;/a&gt;</span><br><span class="line"></span><br><span class="line">        &lt;div <span class="class"><span class="keyword">class</span>=&quot;<span class="title">dropdown</span>-<span class="title">divider</span>&quot;&gt;&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class">        &lt;<span class="title">a</span> <span class="title">class</span>=&quot;<span class="title">dropdown</span>-<span class="title">item</span>&quot; <span class="title">href</span>=&quot;%7<span class="title">B</span>%7<span class="title">B</span>%20<span class="title">admin_url</span>(&#x27;<span class="title">auth</span>/<span class="title">logout</span>&#x27;)%20%7<span class="title">D</span>%7<span class="title">D</span>&quot;&gt;</span></span><br><span class="line"><span class="class">            &lt;<span class="title">i</span> <span class="title">class</span>=&quot;<span class="title">feather</span> <span class="title">icon</span>-<span class="title">power</span>&quot;&gt;&lt;/<span class="title">i</span>&gt; </span>&#123;&#123; <span class="title function_ invoke__">trans</span>(<span class="string">&#x27;admin.logout&#x27;</span>) &#125;&#125;</span><br><span class="line">        &lt;/a&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/li&gt;</span><br><span class="line">@<span class="keyword">endif</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="第二步-在其中加入如下代码-需要几个可以写几个"><a href="#第二步-在其中加入如下代码-需要几个可以写几个" class="headerlink" title="第二步 在其中加入如下代码(需要几个可以写几个)"></a>第二步 在其中加入如下代码(需要几个可以写几个)</h5><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=<span class="string">&quot;%7B%7B%20admin_url(&#x27;auth/setting&#x27;)%20%7D%7D&quot;</span> <span class="class"><span class="keyword">class</span>=&quot;<span class="title">dropdown</span>-<span class="title">item</span>&quot;&gt;</span></span><br><span class="line"><span class="class">           &lt;<span class="title">i</span> <span class="title">class</span>=&quot;<span class="title">feather</span> <span class="title">icon</span>-<span class="title">user</span>&quot;&gt;&lt;/<span class="title">i</span>&gt; </span>&#123;&#123; <span class="title function_ invoke__">trans</span>(<span class="string">&#x27;admin.setting&#x27;</span>) &#125;&#125;</span><br><span class="line">       &lt;/a&gt;</span><br><span class="line"></span><br><span class="line">       &lt;div <span class="class"><span class="keyword">class</span>=&quot;<span class="title">dropdown</span>-<span class="title">divider</span>&quot;&gt;&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>其中链接,图标文字可以自定义</strong></p>
+<h5 id="第三步-在app-Admin-bootstrap-php中加入如下代码"><a href="#第三步-在app-Admin-bootstrap-php中加入如下代码" class="headerlink" title="第三步 在app&#x2F;Admin&#x2F;bootstrap.php中加入如下代码"></a>第三步 在app&#x2F;Admin&#x2F;bootstrap.php中加入如下代码</h5><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_ invoke__">admin_inject_section</span>(<span class="title class_">Admin</span>::<span class="variable constant_">SECTION</span>[<span class="string">&#x27;NAVBAR_USER_PANEL&#x27;</span>], function () &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="title function_ invoke__">view</span>(<span class="string">&#x27;admin.partials.navbar-user-panel&#x27;</span>, [<span class="string">&#x27;user&#x27;</span> =&gt; <span class="title class_">Admin</span>::<span class="title function_ invoke__">user</span>()]);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h5 id="然后就可以啦"><a href="#然后就可以啦" class="headerlink" title="然后就可以啦"></a>然后就可以啦</h5>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://www.980101.top/2022/08/19/Dcat-admin%E9%87%8D%E5%86%99%E9%A1%B6%E9%83%A8%E5%8F%B3%E4%BE%A7%E4%B8%8B%E6%8B%89%E5%88%97%E8%A1%A8/" data-id="cm9oc75wy0003n7nrbmbq7ke2" data-title="Dcat-admin重写顶部右侧下拉列表" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dcat-admin/" rel="tag">dcat-admin</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2022/08/24/sql%E5%91%BD%E4%BB%A4%E8%A1%8C/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">前一篇</strong>
+      <div class="article-nav-title">
+        
+          sql命令行
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/08/19/Dcat-admin-%E8%87%AA%E5%AE%9A%E4%B9%89%E7%99%BB%E5%BD%95%E9%A1%B5%E9%9D%A2/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">Dcat-admin 自定义登录页面</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/docker/">docker</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/laravel/">laravel</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/laravel/dcat-admin/">dcat-admin</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/">linux</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/linux/nginx/">nginx</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/mysql/">mysql</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/ckeditor/" rel="tag">ckeditor</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dcat-admin/" rel="tag">dcat-admin</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/docker/" rel="tag">docker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jwt/" rel="tag">jwt</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/" rel="tag">mysql</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nginx/" rel="tag">nginx</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sql/" rel="tag">sql</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%91%BD%E4%BB%A4/" rel="tag">命令</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/" rel="tag">命令行</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%A1%86%E6%9E%B6/" rel="tag">框架</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/ckeditor/" style="font-size: 10px;">ckeditor</a> <a href="/tags/dcat-admin/" style="font-size: 20px;">dcat-admin</a> <a href="/tags/docker/" style="font-size: 10px;">docker</a> <a href="/tags/jwt/" style="font-size: 10px;">jwt</a> <a href="/tags/linux/" style="font-size: 16.67px;">linux</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/nginx/" style="font-size: 10px;">nginx</a> <a href="/tags/sql/" style="font-size: 10px;">sql</a> <a href="/tags/%E5%91%BD%E4%BB%A4/" style="font-size: 10px;">命令</a> <a href="/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/" style="font-size: 10px;">命令行</a> <a href="/tags/%E6%A1%86%E6%9E%B6/" style="font-size: 13.33px;">框架</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/05/">五月 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/03/">三月 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">二月 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">九月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">八月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/07/">七月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">六月 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2024/05/10/docker%E6%9F%A5%E7%9C%8B%E6%97%A5%E5%BF%97/">docker查看日志</a>
+          </li>
+        
+          <li>
+            <a href="/2023/03/24/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">Linux常用命令</a>
+          </li>
+        
+          <li>
+            <a href="/2023/03/08/%E5%AE%89%E8%A3%85compoer/">安装compoer</a>
+          </li>
+        
+          <li>
+            <a href="/2023/03/08/%E8%85%BE%E8%AE%AF%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BF%AE%E6%94%B9root%E8%B4%A6%E5%8F%B7%E5%AF%86%E7%A0%81/">腾讯云服务器修改root账号密码</a>
+          </li>
+        
+          <li>
+            <a href="/2023/03/08/nginx-php%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/">nginx+php配置文件</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2025 阿珂<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">首页</a>
+  
+    <a href="/archives" class="mobile-nav-link">活动</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
