@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>图片本地化 | 阿珂的个人博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="记一次php解析html123456789101112131415161718192021222324# 防止html被转义$html &#x3D; mb_convert_encoding($html, &#x27;HTML-ENTITIES&#x27;, &#x27;UTF-8&#x27;);# 加载html$dom &#x3D; new \DOMDocument(&#x27;1.0&#x27;, &#x27;UT">
+<meta property="og:type" content="article">
+<meta property="og:title" content="图片本地化">
+<meta property="og:url" content="https://www.980101.top/2025/06/10/%E5%9B%BE%E7%89%87%E6%9C%AC%E5%9C%B0%E5%8C%96/index.html">
+<meta property="og:site_name" content="阿珂的个人博客">
+<meta property="og:description" content="记一次php解析html123456789101112131415161718192021222324# 防止html被转义$html &#x3D; mb_convert_encoding($html, &#x27;HTML-ENTITIES&#x27;, &#x27;UTF-8&#x27;);# 加载html$dom &#x3D; new \DOMDocument(&#x27;1.0&#x27;, &#x27;UT">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-06-10T02:11:00.000Z">
+<meta property="article:modified_time" content="2025-06-19T16:06:59.756Z">
+<meta property="article:author" content="阿珂">
+<meta property="article:tag" content="laravel">
+<meta property="article:tag" content="php">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="阿珂的个人博客" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">阿珂的个人博客</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">首页</a>
+        
+          <a class="main-nav-link" href="/archives">归档</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS 订阅"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="搜索"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://www.980101.top"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-图片本地化" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2025/06/10/%E5%9B%BE%E7%89%87%E6%9C%AC%E5%9C%B0%E5%8C%96/" class="article-date">
+  <time class="dt-published" datetime="2025-06-10T02:11:00.000Z" itemprop="datePublished">2025-06-10</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/php/">php</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      图片本地化
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <!-- 详情页显示去除摘要后的内容 -->
+        <h1 id="记一次php解析html"><a href="#记一次php解析html" class="headerlink" title="记一次php解析html"></a>记一次php解析html</h1><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 防止html被转义</span></span><br><span class="line"><span class="variable">$html</span> = <span class="title function_ invoke__">mb_convert_encoding</span>(<span class="variable">$html</span>, <span class="string">&#x27;HTML-ENTITIES&#x27;</span>, <span class="string">&#x27;UTF-8&#x27;</span>);</span><br><span class="line"><span class="comment"># 加载html</span></span><br><span class="line"><span class="variable">$dom</span> = <span class="keyword">new</span> <span class="title class_">\DOMDocument</span>(<span class="string">&#x27;1.0&#x27;</span>, <span class="string">&#x27;UTF-8&#x27;</span>);</span><br><span class="line">@<span class="variable">$dom</span>-&gt;<span class="title function_ invoke__">loadHTML</span>(<span class="variable">$html</span>);</span><br><span class="line"><span class="comment"># 读取所有img标签</span></span><br><span class="line"><span class="variable">$images</span> = <span class="variable">$dom</span>-&gt;<span class="title function_ invoke__">getElementsByTagName</span>(<span class="string">&#x27;img&#x27;</span>);</span><br><span class="line"><span class="comment"># 通过类获取指定html所有节点 nodes 是数组</span></span><br><span class="line"><span class="variable">$finder</span> = <span class="keyword">new</span> <span class="title class_">\DOMXPath</span>(<span class="variable">$dom</span>);</span><br><span class="line"><span class="variable">$nodes</span> = <span class="variable">$finder</span>-&gt;<span class="title function_ invoke__">query</span>(<span class="string">&quot;//*[contains(concat(&#x27; &#x27;, normalize-space(@class), &#x27; &#x27;), &#x27; <span class="subst">$class</span> &#x27;)]&quot;</span>);</span><br><span class="line"><span class="comment"># 通过id获取html节点</span></span><br><span class="line"><span class="variable">$element</span> = <span class="variable">$dom</span>-&gt;<span class="title function_ invoke__">getElementById</span>(<span class="variable">$id</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">#### 内容保存 ####</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 只取body内容，防止内容丢失</span></span><br><span class="line"><span class="variable">$body</span> = <span class="variable">$dom</span>-&gt;<span class="title function_ invoke__">getElementsByTagName</span>(<span class="string">&#x27;body&#x27;</span>)-&gt;<span class="title function_ invoke__">item</span>(<span class="number">0</span>);</span><br><span class="line"><span class="comment"># 保存html</span></span><br><span class="line"><span class="variable">$newHtml</span> = <span class="variable">$dom</span>-&gt;<span class="title function_ invoke__">saveHTML</span>(<span class="variable">$body</span>);</span><br><span class="line"><span class="comment"># 去除&lt;body&gt;标签</span></span><br><span class="line"><span class="variable">$newHtml</span> = <span class="title function_ invoke__">preg_replace</span>(<span class="string">&#x27;/^&lt;body[^&gt;]*&gt;|&lt;\/body&gt;$/i&#x27;</span>, <span class="string">&#x27;&#x27;</span>, <span class="variable">$newHtml</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment"># 反转义所有HTML实体 针对第一步</span></span><br><span class="line"><span class="variable">$newHtml</span> = <span class="title function_ invoke__">html_entity_decode</span>(<span class="variable">$newHtml</span>, ENT_QUOTES | ENT_HTML5, <span class="string">&#x27;UTF-8&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<h1 id="图片本地化"><a href="#图片本地化" class="headerlink" title="图片本地化"></a>图片本地化</h1><blockquote>
+<p>基于laravel</p>
+<p>主要用到了laravel中的Http类</p>
+<p>use Illuminate\Support\Facades\DB;</p>
+</blockquote>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">use</span> <span class="title">Illuminate</span>\<span class="title">Support</span>\<span class="title">Facades</span>\<span class="title">Http</span>;</span><br><span class="line"><span class="keyword">foreach</span> (<span class="variable">$images</span> <span class="keyword">as</span> <span class="variable">$img</span>) &#123;</span><br><span class="line">   <span class="variable">$src</span> = <span class="variable">$img</span>-&gt;<span class="title function_ invoke__">getAttribute</span>(<span class="string">&#x27;src&#x27;</span>);</span><br><span class="line">   <span class="comment"># 如果包含本地路径，则跳过</span></span><br><span class="line">   <span class="keyword">if</span> (<span class="title function_ invoke__">str_contains</span>(<span class="variable">$src</span>, <span class="variable">$domain</span>) !== <span class="literal">false</span>) <span class="keyword">continue</span>;</span><br><span class="line">   <span class="keyword">try</span> &#123;</span><br><span class="line">       <span class="keyword">if</span> (!<span class="title function_ invoke__">str_contains</span>(<span class="variable">$hostname</span>, <span class="variable">$strMain</span>)) &#123;</span><br><span class="line">            <span class="variable">$response</span> = <span class="title class_">Http</span>::<span class="title function_ invoke__">withoutVerifying</span>()-&gt;<span class="title function_ invoke__">head</span>(<span class="variable">$src</span>);</span><br><span class="line">       &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="variable">$response</span> = <span class="title class_">Http</span>::<span class="title function_ invoke__">head</span>(<span class="variable">$src</span>);</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">if</span> (!<span class="variable">$response</span>-&gt;<span class="title function_ invoke__">ok</span>()) &#123;</span><br><span class="line">            <span class="variable">$statusCode</span> = <span class="variable">$response</span>-&gt;<span class="title function_ invoke__">status</span>();</span><br><span class="line">            <span class="variable">$errorMessage</span> = <span class="string">&quot;远程图片资源不存在 (状态码: <span class="subst">$statusCode</span>)&quot;</span>;</span><br><span class="line">            <span class="keyword">if</span> (<span class="keyword">isset</span>(<span class="variable">$statusCodeMap</span>[<span class="variable">$statusCode</span>])) &#123;</span><br><span class="line">                <span class="variable">$errorMessage</span> .= <span class="string">&quot; - &quot;</span> . <span class="variable">$statusCodeMap</span>[<span class="variable">$statusCode</span>];</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">\Exception</span>(<span class="variable">$errorMessage</span>);</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="variable">$parsed</span> = <span class="title function_ invoke__">parse_url</span>(<span class="variable">$src</span>);</span><br><span class="line">       <span class="variable">$path</span> = <span class="variable">$parsed</span>[<span class="string">&#x27;path&#x27;</span>] ?? <span class="string">&#x27;&#x27;</span>;</span><br><span class="line">       <span class="variable">$filename</span> = <span class="title function_ invoke__">basename</span>(<span class="variable">$path</span>);</span><br><span class="line">       <span class="keyword">if</span> (<span class="keyword">empty</span>(<span class="variable">$filename</span>)) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">\Exception</span>(<span class="string">&#x27;获取图片名错误&#x27;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 下载图片</span></span><br><span class="line">        <span class="variable">$imageData</span> = <span class="title function_ invoke__">file_get_contents</span>(<span class="variable">$src</span>);</span><br><span class="line">        <span class="keyword">if</span> (<span class="variable">$imageData</span> === <span class="literal">false</span>) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">\Exception</span>(<span class="string">&#x27;下载失败&#x27;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// [新增] 内容验证（核心校验逻辑）</span></span><br><span class="line">        <span class="variable">$isValidImage</span> = <span class="literal">true</span>;</span><br><span class="line">        <span class="comment">// 方法2：使用finfo更严格检测（双重验证）</span></span><br><span class="line">        <span class="variable">$finfo</span> = <span class="keyword">new</span> \<span class="title function_ invoke__">finfo</span>(FILEINFO_MIME_TYPE);</span><br><span class="line">        <span class="variable">$detectedMime</span> = <span class="variable">$finfo</span>-&gt;<span class="title function_ invoke__">buffer</span>(<span class="variable">$imageData</span>);</span><br><span class="line">        <span class="keyword">if</span> (!<span class="title function_ invoke__">str_starts_with</span>(<span class="variable">$detectedMime</span>, <span class="string">&#x27;image/&#x27;</span>)) &#123;</span><br><span class="line">            <span class="variable">$isValidImage</span> = <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// [新增] 扩展名与MIME类型匹配校验</span></span><br><span class="line">        <span class="variable">$parsed</span> = <span class="title function_ invoke__">parse_url</span>(<span class="variable">$src</span>);</span><br><span class="line">        <span class="variable">$path</span> = <span class="variable">$parsed</span>[<span class="string">&#x27;path&#x27;</span>] ?? <span class="string">&#x27;&#x27;</span>;</span><br><span class="line">        <span class="variable">$allowedTypes</span> = [</span><br><span class="line">            <span class="string">&#x27;jpg&#x27;</span>  =&gt; <span class="string">&#x27;image/jpeg&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;jpeg&#x27;</span> =&gt; <span class="string">&#x27;image/jpeg&#x27;</span>,</span><br><span class="line">             <span class="string">&#x27;png&#x27;</span>  =&gt; <span class="string">&#x27;image/png&#x27;</span>,</span><br><span class="line">             <span class="string">&#x27;gif&#x27;</span>  =&gt; <span class="string">&#x27;image/gif&#x27;</span>,</span><br><span class="line">             <span class="string">&#x27;webp&#x27;</span> =&gt; <span class="string">&#x27;image/webp&#x27;</span></span><br><span class="line">         ];</span><br><span class="line">         <span class="comment"># 判断 MIME 类型在不在数组中</span></span><br><span class="line">         <span class="keyword">if</span> (!<span class="title function_ invoke__">in_array</span>(<span class="variable">$detectedMime</span>, <span class="variable">$allowedTypes</span>)) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">\Exception</span>(<span class="string">&quot;非图片类型&quot;</span>);</span><br><span class="line">         &#125;</span><br><span class="line">         <span class="comment"># 获取真实后缀</span></span><br><span class="line">         <span class="variable">$ext</span> = <span class="title function_ invoke__">array_search</span>(<span class="variable">$detectedMime</span>, <span class="variable">$allowedTypes</span>);</span><br><span class="line">         <span class="comment"># 这种写法会导致当文件是其他图片格式，但是改了后缀就无法通过的问题</span></span><br><span class="line">         <span class="variable">$originalExt</span> = <span class="title function_ invoke__">strtolower</span>(<span class="title function_ invoke__">pathinfo</span>(<span class="variable">$path</span>, PATHINFO_EXTENSION));</span><br><span class="line">         <span class="comment"># 如果后缀和MIME类型一致，则使用原来的后缀（不是就使用源后缀）</span></span><br><span class="line">         <span class="keyword">if</span> (<span class="variable">$allowedTypes</span>[<span class="variable">$originalExt</span>] == <span class="variable">$detectedMime</span>) &#123;</span><br><span class="line">            <span class="variable">$ext</span> = <span class="variable">$originalExt</span>;</span><br><span class="line">         &#125;</span><br><span class="line">         <span class="keyword">if</span> (!<span class="title function_ invoke__">in_array</span>(<span class="variable">$originalExt</span>, <span class="title function_ invoke__">array_keys</span>(<span class="variable">$allowedTypes</span>))) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">\Exception</span>(<span class="string">&quot;非图片类型&quot;</span>);</span><br><span class="line">         &#125;</span><br><span class="line">         <span class="keyword">if</span> (!<span class="variable">$isValidImage</span>) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">\Exception</span>(<span class="string">&#x27;文件不是图片&#x27;</span>);</span><br><span class="line">         &#125;</span><br><span class="line">         <span class="variable">$filename</span> = <span class="title function_ invoke__">md5</span>(<span class="title function_ invoke__">uniqid</span>()) . <span class="string">&quot;.&quot;</span> . <span class="variable">$ext</span>;</span><br><span class="line">         <span class="comment">// 保存文件</span></span><br><span class="line">         <span class="variable">$localPath</span> = <span class="variable">$fullDir</span> . <span class="variable">$filename</span>;</span><br><span class="line">         <span class="title function_ invoke__">file_put_contents</span>(<span class="variable">$localPath</span>, <span class="variable">$imageData</span>);</span><br><span class="line">         <span class="keyword">if</span> (<span class="title function_ invoke__">isProduction</span>()) &#123;</span><br><span class="line">            <span class="comment">// 构建web访问路径</span></span><br><span class="line">            <span class="variable">$webPath</span> = <span class="string">&quot;https://&quot;</span> . <span class="variable">$domain</span> . <span class="variable">$saveDir</span> . <span class="variable">$filename</span>;</span><br><span class="line">         &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="variable">$webPath</span> = <span class="string">&quot;http://&quot;</span> . <span class="variable">$domain</span> . <span class="variable">$saveDir</span> . <span class="variable">$filename</span>;</span><br><span class="line">         &#125;</span><br><span class="line">         <span class="variable">$img</span>-&gt;<span class="title function_ invoke__">setAttribute</span>(<span class="string">&#x27;src&#x27;</span>, <span class="variable">$webPath</span>);</span><br><span class="line">         <span class="variable">$results</span>[<span class="string">&#x27;success&#x27;</span>][] = [</span><br><span class="line">            <span class="string">&quot;remote&quot;</span> =&gt; <span class="variable">$src</span>,</span><br><span class="line">            <span class="string">&quot;local&quot;</span> =&gt; <span class="variable">$webPath</span>,</span><br><span class="line">         ];</span><br><span class="line">         <span class="variable">$insert</span>[] = [</span><br><span class="line">             <span class="string">&quot;url&quot;</span> =&gt; <span class="variable">$webPath</span>,</span><br><span class="line">             <span class="string">&quot;remote_url&quot;</span> =&gt; <span class="variable">$src</span>,</span><br><span class="line">             <span class="string">&quot;path&quot;</span> =&gt; <span class="variable">$saveDir</span> . <span class="variable">$filename</span>,</span><br><span class="line">             <span class="string">&quot;admin_id&quot;</span> =&gt; <span class="title function_ invoke__">auth</span>(<span class="string">&quot;plat&quot;</span>)-&gt;<span class="title function_ invoke__">user</span>()-&gt;id,</span><br><span class="line">             <span class="string">&quot;created_at&quot;</span> =&gt; <span class="variable">$time</span>,</span><br><span class="line">             <span class="string">&quot;updated_at&quot;</span> =&gt; <span class="variable">$time</span>,</span><br><span class="line">         ];</span><br><span class="line">     &#125; <span class="keyword">catch</span> (\<span class="built_in">Exception</span> <span class="variable">$e</span>) &#123;</span><br><span class="line">         <span class="variable">$results</span>[<span class="string">&#x27;failed&#x27;</span>][] = [</span><br><span class="line">             <span class="string">&quot;message&quot;</span> =&gt; <span class="variable">$e</span>-&gt;<span class="title function_ invoke__">getMessage</span>(),</span><br><span class="line">             <span class="string">&quot;remote&quot;</span> =&gt; <span class="variable">$src</span></span><br><span class="line">         ];</span><br><span class="line">     &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://www.980101.top/2025/06/10/%E5%9B%BE%E7%89%87%E6%9C%AC%E5%9C%B0%E5%8C%96/" data-id="cmc3kpavv0000wgnrhrhg03fx" data-title="图片本地化" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/laravel/" rel="tag">laravel</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/php/" rel="tag">php</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2024/05/10/docker%E6%9F%A5%E7%9C%8B%E6%97%A5%E5%BF%97/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">docker查看日志</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/docker/">docker</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/laravel/">laravel</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/laravel/dcat-admin/">dcat-admin</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/">linux</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/linux/nginx/">nginx</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/mysql/">mysql</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/php/">php</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/ckeditor/" rel="tag">ckeditor</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dcat-admin/" rel="tag">dcat-admin</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/docker/" rel="tag">docker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jwt/" rel="tag">jwt</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/laravel/" rel="tag">laravel</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/" rel="tag">mysql</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nginx/" rel="tag">nginx</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/php/" rel="tag">php</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sql/" rel="tag">sql</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%91%BD%E4%BB%A4/" rel="tag">命令</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/" rel="tag">命令行</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%A1%86%E6%9E%B6/" rel="tag">框架</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/ckeditor/" style="font-size: 10px;">ckeditor</a> <a href="/tags/dcat-admin/" style="font-size: 20px;">dcat-admin</a> <a href="/tags/docker/" style="font-size: 10px;">docker</a> <a href="/tags/jwt/" style="font-size: 10px;">jwt</a> <a href="/tags/laravel/" style="font-size: 10px;">laravel</a> <a href="/tags/linux/" style="font-size: 16.67px;">linux</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/nginx/" style="font-size: 10px;">nginx</a> <a href="/tags/php/" style="font-size: 10px;">php</a> <a href="/tags/sql/" style="font-size: 10px;">sql</a> <a href="/tags/%E5%91%BD%E4%BB%A4/" style="font-size: 10px;">命令</a> <a href="/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/" style="font-size: 10px;">命令行</a> <a href="/tags/%E6%A1%86%E6%9E%B6/" style="font-size: 13.33px;">框架</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/06/">六月 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/05/">五月 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/03/">三月 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">二月 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">九月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">八月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/07/">七月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">六月 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2025/06/10/%E5%9B%BE%E7%89%87%E6%9C%AC%E5%9C%B0%E5%8C%96/">图片本地化</a>
+          </li>
+        
+          <li>
+            <a href="/2024/05/10/docker%E6%9F%A5%E7%9C%8B%E6%97%A5%E5%BF%97/">docker查看日志</a>
+          </li>
+        
+          <li>
+            <a href="/2023/03/24/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">Linux常用命令</a>
+          </li>
+        
+          <li>
+            <a href="/2023/03/08/%E5%AE%89%E8%A3%85compoer/">安装compoer</a>
+          </li>
+        
+          <li>
+            <a href="/2023/03/08/%E8%85%BE%E8%AE%AF%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BF%AE%E6%94%B9root%E8%B4%A6%E5%8F%B7%E5%AF%86%E7%A0%81/">腾讯云服务器修改root账号密码</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2025 阿珂<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">首页</a>
+  
+    <a href="/archives" class="mobile-nav-link">归档</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
