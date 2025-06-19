@@ -904,6 +904,55 @@ a.article-title:hover {
   max-width: 100%;
   margin: 0 auto;
 }
+blockquote {
+  border-left: 4px solid #ddd;
+  margin: 1.5em 0;
+  padding: 0.5em 1em;
+  background-color: #f9f9f9;
+  color: #555;
+  font-style: normal;
+  position: relative;
+  text-align: left !important;
+/* 添加Markdown特有的引用符号 */
+/* 多层嵌套样式 */
+/* 内部元素样式 */
+}
+blockquote::before {
+  content: "“";
+  font-family: Georgia, serif;
+  font-size: 3em;
+  color: #e0e0e0;
+  position: absolute;
+  left: 10px;
+  top: -10px;
+}
+blockquote::after {
+  content: "”";
+  font-family: Georgia, serif;
+  font-size: 3em;
+  color: #e0e0e0;
+  position: absolute;
+  right: 10px;
+  bottom: -30px;
+}
+blockquote blockquote {
+  border-left-color: #ccc;
+  background-color: #f5f5f5;
+}
+blockquote blockquote blockquote {
+  border-left-color: #bbb;
+}
+blockquote p {
+  margin: 0.8em 0;
+  line-height: 1.6;
+}
+blockquote ul,
+blockquote ol {
+  padding-left: 1.5em;
+}
+blockquote code {
+  background-color: #ededed;
+}
 #comments {
   background: #fff;
   -webkit-box-shadow: 1px 2px 3px #ddd;
